@@ -31,13 +31,20 @@
             border: 4px solid black;
             border-radius: 15px;
         }
+        
+    .shift{
+            margin-left: 620px;
+        
+        }
+
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <!-- Just an image -->
+     <nav class="navbar navbar-expand-lg navbar-expand{-sm|-md|-lg|-xl} navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="edu.jpg" width="70" height="60" alt="" loading="lazy">
+            <img src="edu.jpg" width="40" height="30" alt="" loading="lazy">
             <a class="navbar-brand" href="#">Educators Hub</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,10 +52,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,16 +73,17 @@
                         <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
+         
+            <div class="shift">
+                <div class="nav-item ">
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal"
+                        data-target="#LoginModal">Login</button>
+                    <button type="button" class="btn btn-outline-light mx-2" data-toggle="modal" data-target="#SignupModal">Sign
+                        Up</button>
+                </div>
             </div>
         </a>
-        <div>
-            <div class="mx-2">
-                <button type="button" class="btn btn-outline-light" data-toggle="modal"
-                    data-target="#LoginModal">Login</button>
-                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#SignupModal">Sign
-                    Up</button>
-            </div>
-        </div>
+    </div>
         </div>
 
     </nav>
@@ -225,7 +233,6 @@
         </div>
     </div>
     </nav>
-
     <div class="container my-5"></br></br>
         <h1 class="text-center"><b>Team Educators Hub</b></h1>
 
