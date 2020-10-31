@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>educatorshub</title>
+    <style>
+        #more {
+            display: none;
+        }
+
+        #more3 {
+            display: none;
+        }
+
+        #more2 {
+            display: none;
+        }
+
+        body {
+            background-color: honeydew;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Just an image -->
+    <nav class="navbar navbar-expand-lg navbar-expand{-sm|-md|-lg|-xl} navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="edu.jpg" width="70" height="60" alt="" loading="lazy">
+            <a class="navbar-brand" href="#">Educators Hub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="stl.html">STL</a>
+                            <a class="dropdown-item" href="algorithm.html">Algorithm</a>
+                            <a class="dropdown-item" href="datastructure.html">Data Structure</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </a>
+        <div>
+            <div class="mx-2">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal"
+                    data-target="#LoginModal">Login</button>
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#SignupModal">Sign
+                    Up</button>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+    <!--LOgin  Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="edu.jpg" width="60" height="50" alt="" loading="lazy">
+                    <h5 class="modal-title" id="LoginModalLabel"> Login To Educator Hub</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"> Agree to terms and conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Signup  Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="edu.jpg" width="60" height="50" alt="" loading="lazy">
+                    <h5 class="modal-title" id="SignupModalLabel"> Create Educator Hub Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>First Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNumber">Mobile Number</label>
+                            <input type="number" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Andaman and Nicobar Islands</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Dadra & Nagar Haveli and Daman & Diu</option>
+                                    <option>Delhi</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jammu and Kashmir</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Ladakh</option>
+                                    <option>Lakshadweep</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Puducherry</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Agree to terms and conditions
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="back1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-light"><b>Welcome To Educators Hub</b></h1>
+                    <p>
+                    <h4><b>A Place To Learn Coding</b></h4>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="back2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-danger"><b>Welcome To Educators Hub</b></h1>
+                    <p>
+                    <h4 class="text-danger"><b>A Place To Learn Coding</b></h4>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="back3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-light"><b>Welcome To Educators Hub</b></h1>
+                    <p>
+                    <h4><b>A Place To Learn Coding</b></h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="container text-dark text-center">
+        <h1><b>What is Educators Hub ?</b></h1>
+    </div>
+
+    </br></br>
+    <div class="card-deck card text-center mx-5">
+        <div class="card border-primary mb-4 " style="max-width: 25rem; ">
+            <div class="card-header">
+                <h5><b>Solutions In 9 Languages</b></h5>
+            </div>
+            <div class="card-body text-primary ">
+                <img src="c1.jpg" width="60" height="50" alt="" loading="lazy">
+                <p class="card-text"></br>Not everyone speaks the same programming language. We give you solutions to
+                    every
+                    single question in 9 different languages: JavaScript, Python, Swift, C++, Java, C#, Go, Kotlin, and
+                    TypeScript.</p>
+            </div>
+        </div>
+        <div class="card border-secondary mb-4" style="max-width: 25rem;">
+            <div class="card-header">
+                <h5><b>Code-Execution Environment</b></h5>
+            </div>
+            <div class="card-body text-secondary">
+                <img src="c2.jpg" width="60" height="50" alt="" loading="lazy">
+                <p class="card-text"></br>Coding out solutions to algorithm problems is the best way to practice. Our
+                    code-execution environment lets you type out your answers and run them against our test cases right
+                    here on the website.</p>
+            </div>
+        </div>
+        <div class="card border-success mb-4" style="max-width: 25rem;">
+            <div class="card-header">
+                <h5><b>Space-Time Complexity Analyses</b></h5>
+            </div>
+            <div class="card-body text-success">
+                <img src="c3.jpg" width="60" height="50" alt="" loading="lazy">
+                <p class="card-text"></br>Understanding how much memory an algorithm uses and how fast it runs is
+                    exceedingly
+                    important. All of our explanations include a rigorous space-time complexity analysis. </p>
+            </div>
+        </div>
+    </div>
+    </br></br>
+    <div class="card-deck card text-center mx-5">
+        <div class="card border-danger mb-4 " style="max-width: 25rem; ">
+            <div class="card-header">
+                <h5><b>4 Curated Assessments</b></h5>
+            </div>
+            <div class="card-body text-danger ">
+                <img src="c4.jpg" width="60" height="50" alt="" loading="lazy">
+                <p class="card-text"></br>Real coding interviews are timed and have multiple questions. We've carefully
+                    curated 4 assessments to reflect what a real day of coding interviews might look like, filled with
+                    variety and appropriate difficulty.</p>
+            </div>
+        </div>
+        <div class="card border-warning mb-4" style="max-width: 25rem;">
+            <div class="card-header">
+                <h5><b>Certificate Of Completion</b></h5>
+            </div>
+            <div class="card-body text-warning">
+                <img src="c5.jpg" width="60" height="50" alt="" loading="lazy">
+                <p class="card-text"></br>Completing all questions on AlgoExpert is no easy feat. It takes time and
+                    effort,
+                    and it demonstrates a keen understanding of data structures and algorithms. Completing all
+                    AlgoExpert questions earns you a certificate of your coding-interview preparedness.</p>
+            </div>
+        </div>
+        <div class="card border-info mb-4" style="max-width: 25rem;">
+            <div class="card-header">
+                <h5><b>Experience-Backed Interview Tips</b></h5>
+            </div>
+            <div class="card-body text-info">
+                <img src="c6.jpg" width="60" height="50" alt="" loading="lazy">
+                <p class="card-text"></br>Coding interviews go beyond just algorithms and data structures. Our coding
+                    interview tips video series gives you crucial tips and tricks that'll make you stand out from other
+                    software engineers. </p>
+            </div>
+        </div>
+    </div>
+    </br></br></br>
+    <div class="text-center">
+        <h2><b>A Better Way to Prep for Coding Interviews.</b></h2>
+    </div>
+    </br></br>
+    <div class="container">
+        <img src="better.jpg" width=auto height=auto alt="" loading="lazy">
+        <button type="button" class="btn btn-warning mx-5" data-toggle="button" aria-pressed="false">
+            <a href="https://www.youtube.com/channel/UCvMoXW2cpMIywK50GqJqBCw?view_as=subscriber">Educators Hub</a>
+        </button>
+    </div>
+    </br></br>
+    <div class="text-center">
+        <h2><b>And Thousands of Satisfied Engineers.</b></h2>
+    </div></br></br>
+    <div class="container">
+        <div class="card-deck">
+            <div class="card">
+                <img src="eng1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-center"><b>Alex</b></h4>
+                    <h5 class="card-title text-center">Software Engineer</h5>
+                    <img src="google.jpg" class="rounded mx-auto d-block" width="70" height="50" alt="" loading="lazy">
+                    <p class="card-text ">Educators Hub was the backbone of my technical coding interview preparation.
+                        It
+                        allows you to efficiently work through the most common variations of problems asked by top-tier
+                        companies <span id="dots">...</span><span id="more"> without having to spend hours 'battling' an
+                            algorithm only to come up with an
+                            inefficient or incorrect solution. There are a lot of resources available for repetition,
+                            but
+                            Educator Hub differentiates its product by providing the 'how' and 'why' in clear and
+                            concise
+                            videos. Developing a deeper understanding of how to approach these problems is better than
+                            trying to memorize lines of code. I highly recommend Educators Hub.</span></p>
+                    <button type="button" class="btn btn-outline-dark" onclick="myFunction1()" id="myBtn">Read
+                        more</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="eng2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-center"><b>Corbin</b></h4>
+                    <h5 class="card-title text-center">Incoming Software Developer</h5>
+                    <img src="amazon.jpg" class="rounded mx-auto d-block" width="70" height="50" alt="" loading="lazy">
+                    <p class="card-text">As a scientist who was looking to break into Tech, I knew the underlying logic
+                        of programming, but I had a lot of gaps in my understanding, especially on the types of
+                        algorithms questions asked at interviews. <span id="dots2">...</span><span id="more2">I can
+                            confidently say that Educator Hub is one of the
+                            best resources out there for interview preparation, with fantastic video tutorials and an
+                            excellent question selection that allows you to get a deep understanding of the topics and
+                            confidence in your problem solving ability. The site is incredibly intuitive to use and I
+                            think
+                            that the staff are some of the best out there, being incredibly supportive and passionate
+                            about
+                            offering a great customer experience.</span>
+                    </p>
+                    <button type="button" class="btn btn-outline-dark" onclick="myFunction2()" id="myBtn2">Read
+                        more</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="eng3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-center"><b>Carlos</b></h4>
+                    <h5 class="card-title text-center">Software Developer Intern</h5>
+                    <img src="microsoft.jpg" class="rounded mx-auto d-block" width="70" height="50" alt=""
+                        loading="lazy">
+                    <p class="card-text">I'm just writing to thank you for this product. I had failed in so many
+                        interviews before, but I wanted to get into a top tech company so much that I even enrolled in a
+                        Master's program.<span id="dots3">...</span><span id="more3"> Even then, I was unsure if I had
+                            what it takes to make it. From the moment I
+                            heard your first video explanation, I thought 'this is exactly the way to solve an interview
+                            question' (plus the extra points you can grab by asking clarifying questions). After a few
+                            months of studying, mainly on Educator Hub, I got offers to intern at Microsoft and
+                            Google!</span></p>
+                    <button type="button" class="btn btn-outline-dark" onclick="myFunction3()" id="myBtn3">Read
+                        more</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </br></br></br>
+    <div class="container">
+        <h1><b>We Speak 9 Languages.</b></h1>
+    </div></br></br>
+    </div>
+    <div class="container">
+        <div class="d-flex"> <img src="js.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>JavaScript</b>, for all you Front-End Developers</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="ts.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>TypeScript</b>, for all you Edgy JavaScripters</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="p.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>Python</b>, for all you Data Scientists</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="s.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>Swift</b>, for all you iOS Engineers</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="k.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>Kotlin</b>, for all you Androiders</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="cpp.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>C++</b>, for all you Old Schoolers</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="java.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>Java</b>, for all you Masochists</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="c.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5><b>c#</b>, for all you Microsofters</h5>
+        </div>
+        </br>
+        <div class="d-flex"> <img src="go.jpg" width="80" height="60" alt="" loading="lazy">
+            <h5>Go, for all you Kool Kidz</h5>
+        </div>
+        </br>
+    </div>
+    </div>
+    </br></br>
+    <span class="border border-warning">
+        <div class="container">
+            <h1 class="text-center">The Perfect Practice Environment.</h1>
+            </br>
+            <p class="text-center">
+            <h5>In an ideal world, you'd prepare for coding interviews by writing out solutions to problems in your
+                language of choice, getting some hints if necessary, running your code against test cases, and looking
+                at solutions when done.</h5>
+            </p>
+            <p class="text-center">
+            <h5> We've turned that ideal world into the real world. Pick a language. Read the prompt. Write your
+                solution. Get some hints. Run your code again. Check the output. Pass the tests. View our solution.
+                Watch our video. All within the same workspace.</h5>
+            </p>
+        </div>
+    </span>
+    </br>
+
+
+    <section>
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.413351312958!2d76.63565221454029!3d27.797044828152284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972a52d851ffefd%3A0x3a264e1dd58435a6!2sGayatri%20Mandir!5e0!3m2!1sen!2sin!4v1601151685228!5m2!1sen!2sin"
+                width=100% height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe></div>
+    </section>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <footer class="Footer--AE">
+        <div class="Footer-textContainer Footer-textContainer--white">
+            <div class="Footer-copyrightMessage Footer-copyrightMessage--white text-center">Copyright © 2017-2020
+                Educators Hub, LLC.
+                All rights reserved.</div>
+
+        </div>
+    </footer>
+    </br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        function myFunction1() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <script>
+        function myFunction2() {
+            var dots2 = document.getElementById("dots2");
+            var moreText2 = document.getElementById("more2");
+            var btnText2 = document.getElementById("myBtn2");
+
+            if (dots2.style.display === "none") {
+                dots2.style.display = "inline";
+                btnText2.innerHTML = "Read more";
+                moreText2.style.display = "none";
+            } else {
+                dots2.style.display = "none";
+                btnText2.innerHTML = "Read less";
+                moreText2.style.display = "inline";
+            }
+        }
+    </script>
+    <script>
+        function myFunction3() {
+            var dots3 = document.getElementById("dots3");
+            var moreText3 = document.getElementById("more3");
+            var btnText3 = document.getElementById("myBtn3");
+
+            if (dots3.style.display === "none") {
+                dots3.style.display = "inline";
+                btnText3.innerHTML = "Read more";
+                moreText3.style.display = "none";
+            } else {
+                dots3.style.display = "none";
+                btnText3.innerHTML = "Read less";
+                moreText3.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+
+</html>

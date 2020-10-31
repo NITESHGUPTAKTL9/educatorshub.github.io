@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>about</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color:honeydew;
+        }
+
+        .border {
+            text-align: center;
+            border: 4px solid black;
+            margin: 40px;
+            padding: 50px;
+            background-color:lemonchiffon;
+            border-radius: 15px;
+        }
+
+        .my {
+            border: 4px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="edu.jpg" width="70" height="60" alt="" loading="lazy">
+            <a class="navbar-brand" href="#">Educators Hub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="stl.html">STL</a>
+                            <a class="dropdown-item" href="algorithm.html">Algorithm</a>
+                            <a class="dropdown-item" href="datastructure.html">Data Structure</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </a>
+        <div>
+            <div class="mx-2">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal"
+                    data-target="#LoginModal">Login</button>
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#SignupModal">Sign
+                    Up</button>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+    <!--LOgin  Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="edu.jpg" width="60" height="50" alt="" loading="lazy">
+                    <h5 class="modal-title" id="LoginModalLabel"> Login To Educator Hub</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"> Agree to terms and conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Signup  Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="edu.jpg" width="60" height="50" alt="" loading="lazy">
+                    <h5 class="modal-title" id="SignupModalLabel"> Create Educator Hub Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>First Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNumber">Mobile Number</label>
+                            <input type="number" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Andaman and Nicobar Islands</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Dadra & Nagar Haveli and Daman & Diu</option>
+                                    <option>Delhi</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jammu and Kashmir</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Ladakh</option>
+                                    <option>Lakshadweep</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Puducherry</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Agree to terms and conditions
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container my-5"></br></br>
+        <h1 class="text-center"><b>Team Educators Hub</b></h1>
+
+    </div>
+    <div class="text-center img-fluid">
+        <img src="Team.jpg" width="600" height="350" alt="" loading="lazy" class="my img-fluid">
+    </div></br>
+
+    <button type="button" class="btn btn-light btn-lg btn-block"><a
+            href="https://www.youtube.com/channel/UCvMoXW2cpMIywK50GqJqBCw?view_as=subscriber">Welcome To Educators
+            Hub</a></button>
+
+    
+    <div class="border">
+        <h3><b>Team Message</b></h3>
+        <p>Competitive programming is a mind sport usually held over the Internet or a local network, involving
+            participants trying to program according to provided specifications. Contestants are referred to as sport
+            programmers. Competitive programming is recognized and supported by several multinational software and
+            Internet companies, such as Google and Facebook.There are several organizations who host
+            programming competitions on a regular basis.</p>
+        <p>A programming competition generally involves the host presenting a set of logical or mathematical problems,
+            also known as puzzles, to the contestants (who can vary in number from tens to several thousands), and
+            contestants are required to write computer programs capable of solving each problem. Judging is based mostly
+            upon number of problems solved and time spent for writing successful solutions, but may also include other
+            factors (quality of output produced, execution time, program size, etc.)</p>
+        <p>
+            The aim of competitive programming is to write source code of computer programs which are able to solve
+            given problems. A vast majority of problems appearing in programming contests are mathematical or logical in
+            nature. Typical such tasks belong to one of the following categories: combinatorics, number theory, graph
+            theory, algorithmic game theory, computational geometry, string analysis and data structures. Problems
+            related to artificial intelligence are also popular in certain competitions.
+        </p>
+        <p>
+            Irrespective of the problem category, the process of solving a problem can be divided into two broad steps:
+            constructing an efficient algorithm, and implementing the algorithm in a suitable programming language (the
+            set of programming languages allowed varies from contest to contest). These are the two most commonly tested
+            skills in programming competitions.
+        </p>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <footer class="Footer--AE">
+        <div class="Footer-textContainer Footer-textContainer--white">
+            <div class="Footer-copyrightMessage Footer-copyrightMessage--white text-center">Copyright © 2017-2020
+                Educators Hub, LLC.
+                All rights reserved.</div>
+
+        </div>
+    </footer>
+    </br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
